@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>nordSoft</title>
     <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
           integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -20,19 +21,19 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/offer.css">
-
-
+    <link rel="stylesheet" href="styles/menubar.css">
 </head>
 
 <body class="body text-uppercase">
 <header class="header  ">
     <div class="container header__container ">
-        <nav class="navbar nav navbar-expand-lg p-0">
+        <nav class="navbar navbar-expand-lg p-0">
             <div class="row container-fluid align-items-start header__row px-0">
                 <div class="col-12 col-lg-3 px-0 ">
                     <div class="bar-position ">
-                        <button class="navbar-toggler start-0" type="button" >
-                            <img data-toggle="modal" data-target="#myModal" src="assets/icons/menu-bar.png" alt="menu-bar">
+                        <button class="navbar-toggler pull-left" type="button" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <img src="assets/icons/menu-bar.png" alt="menu-bar">
                         </button>
                         <a class="navbar-brand p-0 " href="#">
                             <img class=" logo "
@@ -41,95 +42,84 @@
                         </a>
                     </div>
                 </div>
-
-                <div class=" col-md-9 p-0  ">
-                    <div class="collapse navbar-collapse  ">
-                        <ul class="navbar navbar-nav  p-0   ml-auto" role="tablist">
-                            <li class="nav-item active"><a class="nav-link   " href="#home" role="tab"
-                                                           data-toggle="pill">HOME</a></li>
+                <div class=" col-md-9 navbar-collapse-place p-0  ">
+                    <div class="navbar-collapse collapse  ">
+                        <ul class=" navbar navbar-nav   p-0   ml-auto" role="tablist">
+                            <button class="btn btn-close close btn-close-white show menubar__close navbar-toggler pull-left"
+                                    type="button" data-toggle="collapse"
+                                    data-target=".navbar-collapse">&times;
+                            </button>
+                            <li class="nav-item  "><a class="nav-link active " aria-current="page" href="#home"
+                                                      role="tab"
+                                                      data-toggle="pill">HOME</a></li>
                             <li class="nav-item"><a class="nav-link" href="#services" role="tab"
                                                     data-toggle="pill">SERVICES</a>
                             </li>
+                            <div class="rectangle">
+                                <p>test drive</p>
+                            </div>
                             <li class="nav-item"><a class="nav-link" href="#portfolio" role="tab"
                                                     data-toggle="pill">PORTFOLIO</a></li>
                             <li class="nav-item"><a class="nav-link" href="#dedicatedTeam" role="tab"
                                                     data-toggle="pill">DEDICATED TEAM</a></li>
                             <li class="nav-item"><a class="nav-link" href="#technologies" role="tab"
                                                     data-toggle="pill">TECHNOLOGIES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#testimonial" role="tab"
-                                                    data-toggle="pill">TESTIMONIAL</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#testimonial" role="tab"
+                                                     data-toggle="pill">TESTIMONIAL</a></li>
                             <li class="nav-item"><a class="nav-link" href="#aboutUs" role="tab"
                                                     data-toggle="pill">ABOUT US</a></li>
                         </ul>
-                    </div>
-
-                </div>
-                <div class="modal  " id="myModal" tabindex="-1">
-                    <div class="modal-dialog  modal-xl">
-                        <div class="modal-content">
-                                <button class="close " data-dismiss="modal">x</button>
-                            <div class="modal-body">
-                                <ul class="navbar navbar-nav  p-0   ml-auto" role="tablist">
-                                    <li class="nav-item active"><a class="nav-link   " href="#home">HOME</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a>                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="#portfolio" >PORTFOLIO</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#dedicatedTeam" >DEDICATED TEAM</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#technologies" >TECHNOLOGIES</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#testimonial">TESTIMONIAL</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#aboutUs" >ABOUT US</a></li>
-                                </ul></div>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
 </header>
-<main class="hero ">
-    <div class="container ">
-        <div class="row justify-content-start container-hero ">
-            <div class=" col-md-9 white-position  ">
-                <div class="container m-0">
-                    <div class=" row  row-cols-2 row-cols-md-4 align-items-center">
-                        <div class="col text-center p-0">
-                            <a class="card-link " href="#">
-                                <img src="assets/icons/serv-1.png" alt="web development">
-                                <div class="card-body p-0 pt-16">
-                                    <h5 class="card-title m-0">web development</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col text-center p-0">
-                            <a class="card-link" href="#">
-                                <img src="assets/icons/serv-2.png" alt="mobile aplications">
-                                <div class="card-body  p-0">
-                                    <h5 class="card-title m-0">mobile aplications</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col text-center p-0">
-                            <a class="card-link" href="#">
-                                <img src="assets/icons/serv-3.png" alt="service engineering">
-                                <div class="card-body  p-0 ">
-                                    <h5 class="card-title m-0">service engineering</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col text-center  p-0">
-                            <a class="card-link" href="#">
-                                <img fill="currentColor" src="assets/icons/serv-4.png"
-                                     alt="bussiness analysis and audit">
-                                <div class="card-body  p-0">
-                                    <h5 class="card-title m-0">bussiness&nbsp;analysis and&nbsp;audit</h5>
-                                </div>
-                            </a>
-                        </div>
+<main class="hero  ">
+    <div class="white-position  ">
+        <div class="container">
+            <div class="row container-hero ">
+                <div class=" col-md-9 col-12   ">
+                    <div class="container m-0">
+                        <div class=" row  row-cols-2 row-cols-md-4 align-items-center">
+                            <div class="col text-center p-0">
+                                <a class="card-link " href="#">
+                                    <img class="services__img" src="assets/icons/serv-1.png" alt="web development">
+                                    <div class="card-body p-0 pt-16">
+                                        <h5 class="card-title m-0">web development</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col text-center p-0">
+                                <a class="card-link" href="#">
+                                    <img class="services__img" src="assets/icons/serv-2.png" alt="mobile aplications">
+                                    <div class="card-body  p-0">
+                                        <h5 class="card-title m-0">mobile aplications</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col text-center p-0">
+                                <a class="card-link" href="#">
+                                    <img class="services__img" src="assets/icons/serv-3.png" alt="service engineering">
+                                    <div class="card-body  p-0 ">
+                                        <h5 class="card-title m-0">service engineering</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col text-center  p-0">
+                                <a class="card-link" href="#">
+                                    <img class="services__img" src="assets/icons/serv-4.png"
+                                         alt="bussiness analysis and audit">
+                                    <div class="card-body  p-0">
+                                        <h5 class="card-title m-0">bussiness&nbsp;analysis and&nbsp;audit</h5>
+                                    </div>
+                                </a>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

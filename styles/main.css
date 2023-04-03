@@ -1,11 +1,4 @@
-:root{--breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;}
-
 .body {
-
     padding: 0;
     margin: 0;
     box-sizing: content-box;
@@ -21,5 +14,7 @@
     min-width: 320px;
 }
 
-.container{padding:0;
-margin:0 auto;}
+.container {
+    padding: 0;
+    margin: 0 auto;
+}

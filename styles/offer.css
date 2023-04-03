@@ -1,14 +1,16 @@
-.offer-area{
+.offer-area {
     padding: 255px 0 282px 0;
+
 }
+
 .offer-zone {
     height: 128px;
     border-left: 2px solid black;
     margin: 0;
     padding: 0 0 0 30px;
-
 }
-.offer-text{
+
+.offer-text {
     text-align: start;
     font-size: 57px;
     line-height: 55px;
@@ -17,18 +19,26 @@
     padding: 17px 0 15px 0;
 }
 
-@media screen and (max-width:767px) {
-    .offer-text {text-align: center;
+@media screen and (max-width: 991px) {
+    .offer-area {
+        padding: 92px 0 92px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offer-text {
+        text-align: center;
         font-size: 37px;
         line-height: 35px;
     }
+
     .offer-zone {
         height: auto;
-        border-left: none;}
+        border-left: none;
+    }
+
+    .offer-area {
+        padding: 56px 0 45px 0;
+    }
 }
 
-/*@media screen and (max-width:320px){*/
-/*    .logo{*/
-/*        display:block;*/
-/*    }*/
-/*}*/

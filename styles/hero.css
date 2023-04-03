@@ -1,17 +1,13 @@
-.hero {
-       padding-top: 172px;
-
-}
-.white-position{
+.white-position {
     background-image: url("../assets/images/white-line2.png");
     background-repeat: no-repeat;
+    background-size: 80% 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-    /*background-position: -35% 137px;*/
-    background-size:cover;}
 .container-hero {
-
-
-
+    justify-content: start;
 }
 
 .card-link {
@@ -20,14 +16,10 @@
 }
 
 .card-link:hover, .card-link:focus {
-    color: #1366b4;
     text-decoration: none;
+    filter: brightness(0.5) grayscale(50%);
+    color: #1366b4;
 }
-
-/*.card-img:hover {*/
-
-/*    color: #000000;*/
-/*}*/
 
 .card-title {
     font-size: 14px;
@@ -36,28 +28,33 @@
     padding-top: 16px;
     white-space: nowrap;
 }
-/*@media screen and (max-width: 2199px) {*/
-/*    .hero {*/
-/*        background-size:80%;*/
-/*        background-position: -50% 137px;*/
-/*    }*/
-/*}*/
-/*@media screen and (max-width: 1640px) {*/
-/*    .hero {*/
-/*        background-size:85%;*/
-/*    }*/
+
+.card-title:hover {
+    filter: none;
+    color: #0ba6ff;
+}
 
 @media screen and (max-width: 991px) {
     .card-title {
-        white-space:normal;
+        white-space: normal;
         font-size: 12px;
         line-height: 14px;
+    }
 
+    .white-position {
+        background-size: 150% 100%;
+        padding-top: 36px;
+        padding-bottom: 24px;
+    }
+
+    .container-hero {
+        justify-content: center;
     }
 }
 
-/*@media screen and (max-width:320px){*/
-/*    .logo{*/
-/*        display:block;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 767px) {
+    .white-position {
+        padding-top: 38px;
+        padding-bottom: 46px;
+    }
+}
