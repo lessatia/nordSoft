@@ -30,7 +30,7 @@
     transform: rotate(45deg);
     position: fixed;
     top: 15px;
-    right: -45px;
+    right: -25px;
     background: linear-gradient(to right, #3c9ae4, #4eb8ec);
 }
 
